@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. De Vydt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Michiel De Vydt</h1>
+    </header>
+
+    <!-- Personal slogans -->
+    <main id="mainContent" class="backspace">PhD candidate</main>
+    <main id="newContent" class="typing" style="display: none;">Quantitative social scientist working towards data expertise</main>
+
+    <!-- Navigation -->
+    <div class="word-container">
+        <span id="about" class="word" onclick="toggleInfo('about-info')">About</span>
+        <span id="research" class="word" onclick="toggleInfo('research-info')">Research</span>
+        <a href="https://scholar.google.be/citations?user=SHKQDzYAAAAJ" target="_blank" class="word">Publications</a>
+        <span id="contact" class="word" onclick="toggleInfo('contact-info')">Contact</span>
+    </div>
+
+    <!-- About me summary, with "Read more" anchor -->
+    <div id="about-info" class="info" style="display: none;">
+        <table>
+            <td>
+                <b>About me</b><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt tellus ut neque convallis feugiat. Integer luctus sapien mauris, sit amet commodo erat tempus et. Praesent id condimentum erat. Suspendisse vel ullamcorper arcu. Donec lectus nunc, sodales sit amet nibh eu, euismod dictum eros. Sed ut nibh eros. Proin vitae dolor sem. Suspendisse a sollicitudin odio, et lacinia purus.<br>
+                <a href="#" class="read-more-link" onclick="loadAdditionalContent('about-content')">
+                    <p style="text-align: center">Read more →</p>
+                </a>
+            </td>
+        </table>
+    </div>
+
+    <!-- Research info summary, with "Read more" anchor -->
+    <div id="research-info" class="info" style="display: none;">
+        <table>
+            <td>
+                <b>Research info</b><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt tellus ut neque convallis feugiat. Integer luctus sapien mauris, sit amet commodo erat tempus et. Praesent id condimentum erat. Suspendisse vel ullamcorper arcu. Donec lectus nunc, sodales sit amet nibh eu, euismod dictum eros. Sed ut nibh eros. Proin vitae dolor sem. Suspendisse a sollicitudin odio, et lacinia purus.<br>
+                <a href="#" class="read-more-link" onclick="loadAdditionalContent('research-content')">
+                    <p style="text-align: center">Read more →</p>
+                </a>
+            </td>
+        </table>
+    </div>
+
+    <!-- Contact info -->
+    <div id="contact-info" class="info" style="display: none;">
+        <table>
+            <tr>
+                <td style="text-align: center"><a href="mailto:michiel.devydt@uantwerpen.be">michiel.devydt@uantwerpen.be</a></td>
+            </tr>
+            <tr>
+                <td style="text-align: center"><a href="https://www.researchgate.net/profile/Michiel-De-Vydt" target="_blank">ResearchGate profile</a></td>
+            </tr>
+            <tr>
+                <td style="text-align: center"><a href="https://www.linkedin.com/in/michieldevydt" target="_blank">LinkedIn profile</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Small text in bottom right corner -->
+    <div id="message" style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;" onclick="toggleCopyright()">Hii & thanks for helping me</div>
+
+    <!-- This script toggles tables -->
+    <script>
+        function toggleInfo(infoId) {
+            var selectedInfo = document.getElementById(infoId);
+            
+            // Check if the selected info is already visible
+            var isVisible = selectedInfo.style.display === 'block';
+
+            // Hide all infos
+            var allInfos = document.querySelectorAll('.info');
+            allInfos.forEach(function (info) {
+                info.style.display = 'none';
+            });
+
+            // Show the selected info only if it was not already visible
+            if (!isVisible) {
+                selectedInfo.style.display = 'block';
+            }
+        }
+    </script>
+
+    <!-- This script does the slogan typing animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                var mainContent = document.getElementById('mainContent');
+                var newContent = document.getElementById('newContent');
+
+                mainContent.style.display = 'none';
+                newContent.style.display = 'inline-block';
+            }, 4500); // 4.5s delay before revealing the new sentence
+        });
+    </script>
+
+</body>
+</html>

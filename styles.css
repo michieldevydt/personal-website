@@ -1,0 +1,96 @@
+header {
+    background-color: #f4f4f4;
+    color: #1877F2;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    padding: 80px 0px 0px 0px;
+    text-align: center;
+}
+header:hover {
+    text-decoration: none;
+}
+body {
+    background-color: #f4f4f4;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+main {
+    font-size: 18px;
+}
+.word-container {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    height: 25vh; /* Set height to 25% of viewport height */
+    align-self: center; /* Vertically center the container */
+}
+.word {
+    margin-bottom: 10px;
+    transition: font-size 0.3s ease, margin-left 0.5s ease;
+    margin-left: 0; /* Add this line to set the initial margin */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set text color to black */
+}
+.word:hover {
+    font-size: 24px; /* Adjust this value based on your preference */
+}
+table, th, td {
+    border-collapse: collapse;
+    border: none;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+#about-info,
+#research-info,
+#contact-info {
+    margin-top: -30px; /* Adjust this value to move the tables upward */
+    text-align: left;
+}
+a {
+    color: #1877F2;
+    text-decoration: none;
+}
+
+/* Backspace and typing animation */
+main {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+@keyframes backspace {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.backspace {
+    animation: backspace 4s forwards; /* Adjust duration as needed */
+}
+
+.typing {
+    animation: typing 8s forwards; /* Adjust duration as needed */
+}
+
+.about-info {
+    text-align: left;
+}
