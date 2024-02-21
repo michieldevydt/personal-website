@@ -19,10 +19,22 @@ body {
     text-rendering: optimizeSpeed;
     place-content: center;
 }
+
+img,
+header {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--blue);
+    margin-top: 2.5em;
+
+}
+header {
+    margin-left: 10px; /* Adjust margin between the image and the header */
+} 
+
 header {
     background-color: var(--white);
     color: var(--blue);
-    margin-top: 5em;
     text-align: center;
 }
 
@@ -31,7 +43,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 5em;
+    margin-top: 2.5em;
     align-self: center; /* Vertically center the container */
 }
 
@@ -71,8 +83,3 @@ a {
     color: #1877F2;
     text-decoration: none;
 }
-
-
-
-
-
