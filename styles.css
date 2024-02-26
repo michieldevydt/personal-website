@@ -13,8 +13,7 @@ body {
 
 body, html {
   height: 100%;
-  
-}
+  }
 
 .container {
   display: flex;
@@ -123,11 +122,11 @@ span {
   animation: caret 1s steps(1) infinite;
 }
 
-@keyframes caret {
+/* @keyframes caret {
   50% {
     border-color: transparent;
   }
-}
+} */
 
 
 .image-left-of-text {
