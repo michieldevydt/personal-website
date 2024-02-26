@@ -1,86 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michiel De Vydt</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <!-- my css -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- favicon -->
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#4a4a4a">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michiel De Vydt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <!-- my css -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <img src="favicon.svg" width="50" height="50"/>
-    <header>Michiel De Vydt</header>
 
-    <div class="word-container">
-        <span id="about" class="word" onclick="toggleInfo('about-info')">About</span>
-        <span id="research" class="word" onclick="toggleInfo('research-info')">Research</span>
-        <a href="https://scholar.google.be/citations?user=SHKQDzYAAAAJ" target="_blank" class="word">Publications</a>
-        <span id="contact" class="word" onclick="toggleInfo('contact-info')">Contact</span>
+
+<section class="section-hero">
+  <div class="container">
+    <h1 class="hero-text"></h1> <!-- see javascript -->
+  </div>
+  <div class="pixel top-left"></div>
+  <div class="pixel top-right"></div>
+  <div class="pixel bottom-left"></div>
+  <div class="pixel bottom-right"></div>
+  <div class="about">About</div>
+  <div class="research">Research</div>
+  <div class="data-skills">Data skills</div>
+  <div class="run">Sub 3'50"</div>
+</section>
+
+
+<section class="section-about">
+    <div class="whitespacefix"></div>
+    <div class="image-left-of-text">
+      <img src="MeOnADonkey.jpg" width="400" height="auto" alt="It's me on a donkey statue in a lovely Spanish village called Mijas">
+      <div class="text-container">
+        <p><strong>About</strong></p>
+        <p>I am a PhD candidate in Social Sciences: Political Science at the University of Antwerp<br>Data handling and rigorous statistical analysis make me happy<br>I am an avid middle-distance runner (800-3000m)</p>
+        <p class="quote">"Pretentie is ‘de motorolie van creativiteit’, schrijft Dan Fox. Pretentie verraadt namelijk altijd het idee en de wens dat er iets beters is dan het huidige, iets mooiers, iets intelligenters, iets nieuwers, iets originelers, iets diepzinnigers. Zodoende doorbreekt pretentie de status-quo. Daarom begint Fox zijn pleidooi met erop te wijzen dat pretentie in het Latijn komt van ‘voor je uit rekken’: wie pretentieus is, rekt zich uit, en bereikt zo iets waar hij anders niet bij zou komen. Fox citeert de legendarische popcomponist Brian Eno: ‘Het algemene idee is dat er “echte mensen” zijn, en mensen die doen alsof ze iets zijn wat ze niet zijn. Het idee is dat er iets moreel mis is met doen alsof. (…) Ik denk dat doen alsof het belangrijkste is wat we kunnen. Het is de manier waarop we onze gedachte-experimenten uitvoeren, en ontdekken hoe dingen anders kunnen zijn.’" — Joost de Vries, 2016 © De Groene Amsterdammer</p>
+      </div>
     </div>
+</section>
 
-    <div id="about-info" class="info">
-        <p>I am a PhD candidate in Social Sciences: Political Science at the University of Antwerp</p>
-        <p>Data handling and rigorous statistical analysis make me happy</p>
-        <p>The fastest I've ever run 800m is 1'53"76</p>
 
+<section class="section-research">
+  <div class="whitespacefix"></div>
+  <div class="image-left-of-text">
+    <img src="./Feininger1911.png">
+    <div class="text-container">
+      <p><strong>Research</strong></p>
+      <p>My doctoral research focuses on protest participation.<br>More specifically, I examine the micro-level predictors and outcomes of <strong>interpersonal protest recruiting</strong> (aka. "asking others" to protest). I mainly use quantitative panel survey data to analyze my research questions. Thematically, I have covered labor union demonstrations, solidarity movements, and the climate movement.</p>
+      <p>Together with valued coauthors and excellent promotors, I have published two international descriptive reports on Fridays For Future and one peer-reviewed essay on contemporary climate activism (combined 860+ citations), four other peer-reviewed articles in top-ranking sociology journals (on the topic of interpersonal protest recruiting), and three public reports (on Belgian protests). Two other peer-reviewed publications and one encyclopedia entry are currently forthcoming. Please find my publications <a href="https://scholar.google.be/citations?user=SHKQDzYAAAAJ&hl=nl" target="_blank">here</a>.</p>
+      <p>I am determined to grow as an empirical social scientist.<br>My research interests are relatively broad, but topics related to agonistics (C. Mouffe), affective polarization, and populism (m.n. conspiracy beliefs) are dear to me. Regarding protest, I believe the routinization/banalization of protest vs. violence deserves empirical attention.</p>
+      <p class="quote">Artwork 'Carnival in Arcueil' by Lynonel Feiniger (1911) © 2018 Artists Rights Society (ARS), New York / VG Bild-Kunst, Bonn</p>
     </div>
+  </div>
+</section>
 
-    <div id="research-info" class="info" style="display: none;">
-        <p><strong>Interpersonal protest recruiting</strong></p>
-        <p>My doctoral research focuses on protest participation. More specifically, I examine the micro-level predictors and outcomes of interpersonal protest recruiting (aka. "asking others" to protest). I mainly use quantitative panel survey data to analyze my research questions. Thematically, I have covered labor union demonstrations, solidarity movements, and the climate movement.</p>
-        <p>Using a predominantly quantitative methodological approach, I have gained real experience with data handling and (advanced) analysis (e.g. longitudinal egocentric network data). I consider myself an expert with Qualtrics and Stata, and an ongoing student of R and Python. I currently assist academic professionals with various aspects of survey programming, dataset merging and preparation, as well as designing data visualizations.</p> 
-        <p>Together with valued coauthors and excellent promotors, I have published two high-impact international descriptive reports on Fridays For Future and one peer-reviewed essay on contemporary climate activism (combined 860+ citations), four other peer-reviewed articles in top-ranking sociology journals (on the topic of interpersonal protest recruiting), and three public reports (on Belgian protests). Two other peer-reviewed publications and one encyclopedia entry are currently forthcoming.</p>
+<section class="section-data">
+  <div class="whitespacefix"></div>
+  <div class="image-left-of-text">
+    <img class="imgData" src="DataAnalysis.png" width="750" height="auto" alt="Screenshot of Stata syntax">
+    <div class="text-container">
+      <p><strong>Data skills</strong></p>
+      <p>Using a predominantly quantitative methodological approach, I have gained real experience with data handling and (advanced) analysis (e.g. longitudinal egocentric network data). I consider myself an expert with Qualtrics and Stata, and an ongoing student of Python and R (for data viz). I currently assist academic professionals with various aspects of survey programming, dataset merging and preparation, as well as designing data visualizations.</p>
+      <p>I take pride in having a solid understanding of the basics in statistics. Please, do ask me about the Central Limit Theorem, degrees of freedom, or what the p-value literally means.</p>
     </div>
+  </div>
+</section>
 
-    <div id="contact-info" class="info" style="display: none;">
-        <table>
-            <tr>
-                <th>Email</th>
-                <td><a href="mailto:michiel.devydt@uantwerpen.be">michiel.devydt@uantwerpen.be</a></td>
-            </tr>
-            <tr>
-                <th>ResearchGate</th>
-                <td><a href="https://www.researchgate.net/profile/Michiel-De-Vydt" target="_blank">ResearchGate profile</a></td>
-            </tr>
-            <tr>
-                <th>LinkedIn</th>
-                <td><a href="https://www.linkedin.com/in/michieldevydt" target="_blank">LinkedIn profile</a></td>
-            </tr>
-        </table>
+<section class="section-run">
+  <div class="whitespacefix"></div>
+  <div class="image-left-of-text">
+    <img class="imgData" src="Screenshot1500m2019.png" width="750" height="auto" alt="Screenshot of Stata syntax">
+    <div class="text-container">
+      <p><strong>Sub 3'50"</strong></p>
+      <p>In the past, I've run decent 800m and 1500m races. (<a href="https://www.youtube.com/watch?v=tFDTJ0J8JGo" target="_blank">Here</a> you can see me win a 800m race (woah, 11 years ago!)). Nowadays, 800m is too short & fast for me. However, I am determined to prove my running talent one more time during the 2024 summer, by sharpening my 1500m personal best to a time sub-3'50". That would place me in the (circa) top-30 of Belgian athletes. Training for this goal is a great excercise in building discipline, postponing rewards and/or dealing with disappointments, and building resilience.</p>
     </div>
+  </div>
+</section>
 
-    <script>
-        function toggleInfo(infoId) {
-            var selectedInfo = document.getElementById(infoId);
-            
-            // Check if the selected info is already visible
-            var isVisible = selectedInfo.style.display === 'block';
+<p class="back">Back to top</p>
 
-            // Hide all infos
-            var allInfos = document.querySelectorAll('.info');
-            allInfos.forEach(function (info) {
-                info.style.display = 'none';
-            });
-
-            // Show the selected info only if it was not already visible
-            if (!isVisible) {
-                selectedInfo.style.display = 'block';
-            }
-        }
-    </script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
