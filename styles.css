@@ -1,85 +1,174 @@
 :root {
-    --ff-courier: "Courier", monospace;
-    --ff-roboto: "Roboto", sans-serif;
-
-    --white: #f4f4f4;
-    --blue: #1877F2;
+  font-size: 16px;
 }
-
-html {
-    font-size: 16px; /* Set the root font size to 16 pixels */
-  }
 
 body {
-    background-color: var(--white);
-    font-family: var(--ff-roboto);
-    text-align: center;
-    word-spacing: 1.4px;
-    line-height: 1.6;
-    text-rendering: optimizeSpeed;
-    place-content: center;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
-img,
-header {
-    display: inline-block;
-    vertical-align: middle;
-    color: var(--blue);
-    margin-top: 2.5em;
+* { text-decoration: none;}
 
-}
-header {
-    margin-left: 10px; /* Adjust margin between the image and the header */
-} 
-
-header {
-    background-color: var(--white);
-    color: var(--blue);
-    text-align: center;
+body, html {
+  height: 100%;
+  
 }
 
-.word-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2.5em;
-    align-self: center; /* Vertically center the container */
+.container {
+  display: flex;
+  justify-content: left; /* Center horizontally */
+  margin-left: 10%;
+  align-items: center; /* Center vertically */
+  height: 100%;
 }
 
-.word {
-    margin-bottom: 10px;
-    transition: font-size 0.3s ease, margin-left 0.5s ease;
-    margin-left: 0; /* Add this line to set the initial margin */
-    text-decoration: none; /* Remove underline */
-    color: black; /* Set text color to black */
-    margin: 0 10px;
+.hero-text {
+  font-size: 5rem;
+  font-weight: 300;
+  word-spacing: 1.4px;
 }
-.word:hover {
-    font-size: 24px; /* Adjust this value based on your preference */
-    margin-left: 10px; /* Adjust this value based on your preference */
+
+.pixel {
+  margin: 20px;
+  width: 50px; 
+  height: 50px;
+  position: fixed;
+}
+.top-left {
+  top: 0; 
+  left: 0; 
+}
+.top-right {
+  top: 0; 
+  right: 0; 
+}
+.bottom-left {
+  bottom: 0; 
+  left: 0; 
+}
+.bottom-right {
+  bottom: 0; 
+  right: 0;
+}
+
+.about {
+  position: fixed;
+  top: 25px; 
+  left: 90px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.research {
+  position: fixed;
+  top: 25px; 
+  right: 90px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.data-skills {
+  position: fixed;
+  bottom: 25px;
+  left: 90px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.run {
+  position: fixed;
+  bottom: 25px;
+  right: 90px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+
+/* Additional styles for text elements */
+.about:hover,
+.research:hover,
+.data-skills:hover,
+.run:hover {
+  color: transparent; /* Set the color to transparent on hover */
+}
+
+.section-hero {
+  height: 100vh;
+}
+
+.whitespacefix {
+  height: 5vh;
+}
+
+.section-about, 
+.section-research,
+.section-data {
+  height: 110vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-size: 1.25rem;
+}
+
+.section-run {
+  height: 70vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-size: 1.25rem;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+.image-left-of-text {
+  display: flex;
+  align-items: flex-start; 
+}
+
+.image-left-of-text p {
+  margin-left: 25px;
+}
+
+.text-container p {
+  text-align: justify;
+  padding-bottom: 20px; /* Add padding to the bottom */
+}
+
+.imgData {
+  border: 1px solid grey;
+}
+
+.quote {
+  font-size: 18px;
+  font-style: italic;
+  padding-left: 25px;
 }
 
 .info {
-    margin-top: 5em;
-    margin-left: 10vw;
-    margin-right: 10vw;
+  margin: auto 0;
+
 }
 
-#research-info {
-    text-align: justify;
+.back {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 2rem;
+  font-weight: 500;
+  color: antiquewhite;
+  margin-bottom: 10vh;
 }
 
-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-} 
-th, td {
-    padding: 10px;
-    text-align: left;
-    font-size: 16px;
-}
-a {
-    color: #1877F2;
-    text-decoration: none;
+.back:hover {
+  color:ghostwhite;
 }
