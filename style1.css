@@ -1,0 +1,142 @@
+:root {
+  font-size: 18px;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.container-hero {
+  display: flex;
+  justify-content: left; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-family: "Roboto Slab", serif;
+  height: 100vh;
+  margin-left: 10%;
+}
+
+.hero-text {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50px 150px;
+  position: fixed;
+  font-family: "Roboto Slab", serif;
+}
+
+.container-pixel {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+}
+.pixel {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.container-items {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 2;
+  justify-content: center;
+  gap: 25px;
+}
+.item {
+  display: grid;
+  grid-column-start: 2;
+}
+
+.landingpage {
+  height: 100vh;
+}
+
+.section-about, 
+.section-research,
+.section-data {
+  min-height: 80vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-top: 5vh;
+}
+
+.section-run {
+  min-height: 80vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.field1-1 {
+  margin-top: 40px;
+}
+.field1-2 {
+  margin-left: 25px;
+  text-align: justify;
+  max-width: 850px;
+}
+.field2-1 {
+  margin-top: 40px;
+}
+.field2-2 {
+  margin-left: 25px;
+  text-align: justify;
+  max-width: 650px;
+}
+.field3-1 {
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: justify;
+  max-width: 650px;
+}
+.field3-2 {
+  margin-top: 40px;
+}
+.field4-1 {
+  margin-left: 25px;
+  margin-top: 25px;
+  text-align: justify;
+  max-width: 800px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 50px 150px 650px;
+}
+
+#back {
+  align-items: center;
+  margin: auto 0;
+}
+.disclaimer {
+  text-align: left;
+  align-items: center;
+  margin: auto 0;
+  color: grey;
+}
