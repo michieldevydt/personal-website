@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var backButton = document.querySelector('.back');
 
   // Get the target section element
-  var backSection = document.querySelector('.section-hero');
+  var backSection = document.querySelector('.container-hero');
 
   // Add a click event listener to the About button
   backButton.addEventListener('click', function() {
