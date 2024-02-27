@@ -1,5 +1,5 @@
 :root {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
@@ -7,26 +7,23 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  line-height: 1.6;
+}
+
+.quote {
+  font-style: italic;
+  padding-left: 25px;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 * { text-decoration: none;}
 
 body, html {
   height: 100%;
-  }
-
-.container {
-  display: flex;
-  justify-content: left; /* Center horizontally */
-  margin-left: 10%;
-  align-items: center; /* Center vertically */
-  height: 100%;
-}
-
-.hero-text {
-  font-size: 5rem;
-  font-weight: 300;
-  word-spacing: 1.4px;
 }
 
 .pixel {
@@ -51,112 +48,114 @@ body, html {
   bottom: 0; 
   right: 0;
 }
-
 .about {
   position: fixed;
   top: 25px; 
   left: 90px;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 300;
+  line-height: 1;
+  color: hsla(0, 3%, 8%, 0.5);
 }
-
 .research {
   position: fixed;
   top: 25px; 
   right: 90px;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 300;
+  line-height: 1;
+  color: hsla(0, 3%, 8%, 0.5);
 }
-
 .data-skills {
   position: fixed;
   bottom: 25px;
   left: 90px;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 300;
+  line-height: 1;
+  color: hsla(0, 3%, 8%, 0.5);
 }
-
 .run {
   position: fixed;
   bottom: 25px;
   right: 90px;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 300;
+  line-height: 1;
+  color: hsla(0, 3%, 8%, 0.5);
 }
 
-
-/* Additional styles for text elements */
-.about:hover,
-.research:hover,
-.data-skills:hover,
-.run:hover {
-  color: transparent; /* Set the color to transparent on hover */
+.container-hero {
+  display: flex;
+  justify-content: left; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%;
+  margin-left: 10%;
 }
 
-.section-hero {
-  height: 100vh;
+.hero-text {
+  font-size: 5rem;
+  font-weight: 300;
+  word-spacing: 1.4px;
 }
 
-.whitespacefix {
-  height: 5vh;
+.container {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.field1-2 {
+  margin-left: 25px;
+  text-align: justify;
+  max-width: 850px;
+}
+
+.field2-2 {
+  margin-left: 25px;
+  text-align: justify;
+  max-width: 650px;
+}
+
+.field3-1 {
+  margin-right: 25px;
+  text-align: justify;
+  max-width: 650px;
+}
+
+.field3-2 {
+  margin-top: 75px;
+}
+
+.field4-2 {
+  margin-left: 25px;
+  text-align: justify;
+  max-width: 650px;
+}
 .section-about, 
 .section-research,
 .section-data {
-  height: 110vh;
+  min-height: 100vh;
   margin-left: 15vw;
   margin-right: 15vw;
-  font-size: 1.25rem;
+  padding-top: 5vh;
 }
 
 .section-run {
-  height: 70vh;
+  min-height: 75vh;
   margin-left: 15vw;
   margin-right: 15vw;
-  font-size: 1.25rem;
+  padding-top: 5vh;
 }
 
-span {
-  border-right: .05em solid;
-  animation: caret 1s steps(1) infinite;
-}
 
-/* @keyframes caret {
-  50% {
-    border-color: transparent;
-  }
-} */
-
-
-.image-left-of-text {
-  display: flex;
-  align-items: flex-start; 
-}
-
-.image-left-of-text p {
-  margin-left: 25px;
-}
-
-.text-container p {
-  text-align: justify;
-  padding-bottom: 20px; /* Add padding to the bottom */
-}
 
 .imgData {
   border: 1px solid grey;
 }
 
-.quote {
-  font-size: 18px;
-  font-style: italic;
-  padding-left: 25px;
-}
-
-.info {
-  margin: auto 0;
-
-}
 
 .back {
   display: flex;
