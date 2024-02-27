@@ -1,61 +1,32 @@
-function generateRandomColor() {
-  return '#' + Math.random().toString(16).substr(2, 6); // Generate a random hex color
-}
-
+// random color hover effect
 document.addEventListener("DOMContentLoaded", function() {
   const pixels = document.querySelectorAll('.pixel'); // Get all pixels
-  
+  const items = document.querySelectorAll('.item'); // Get all items
+
+  // Function to generate a random color
+  function generateRandomColor() {
+    return '#' + Math.random().toString(16).substr(2, 6); // Generate a random hex color
+  }
+
   // Set random colors for all pixels
   pixels.forEach(pixel => {
     pixel.style.backgroundColor = generateRandomColor();
   });
 
-});
+  // Event listeners for mouseover and mouseout events
+  items.forEach((item, index) => {
+    item.addEventListener('mouseover', function() {
+      this.style.color = pixels[index].style.backgroundColor; // Set text color to corresponding pixel color on mouseover
+    });
 
-document.addEventListener("DOMContentLoaded", function() {
-  const about = document.querySelector('.about');
-  const research = document.querySelector('.research');
-  const dataSkills = document.querySelector('.data-skills');
-  const run = document.querySelector('.run');
-
-  const topLeftPixel = document.querySelector('.top-left');
-  const topRightPixel = document.querySelector('.top-right');
-  const bottomLeftPixel = document.querySelector('.bottom-left');
-  const bottomRightPixel = document.querySelector('.bottom-right');
-
-  function getColor(pixel) {
-    return window.getComputedStyle(pixel).backgroundColor;
-  }
-
-  about.addEventListener('mouseover', function() {
-    about.style.color = getColor(topRightPixel);
-  });
-  about.addEventListener('mouseout', function() {
-    about.style.color = ''; // Reset color on mouseout
-  });
-
-  research.addEventListener('mouseover', function() {
-    research.style.color = getColor(topLeftPixel);
-  });
-  research.addEventListener('mouseout', function() {
-    research.style.color = ''; // Reset color on mouseout
-  });
-
-  dataSkills.addEventListener('mouseover', function() {
-    dataSkills.style.color = getColor(bottomRightPixel);
-  });
-  dataSkills.addEventListener('mouseout', function() {
-    dataSkills.style.color = ''; // Reset color on mouseout
-  });
-
-  run.addEventListener('mouseover', function() {
-    run.style.color = getColor(bottomLeftPixel);
-  });
-  run.addEventListener('mouseout', function() {
-    run.style.color = ''; // Reset color on mouseout
+    item.addEventListener('mouseout', function() {
+      this.style.color = ''; // Reset text color on mouseout
+    });
   });
 });
 
+
+//here
 document.addEventListener('DOMContentLoaded', function(event) {
   // array with texts to type in typewriter
   var dataText = ["I am Michiel De Vydt", "I am a quantitative social scientist"];
@@ -101,10 +72,25 @@ document.addEventListener('DOMContentLoaded', function(event) {
 });
 
 
+//click to Back-to-top
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the Back button element
+  var backButton = document.querySelector('#back');
+
+  // Get the target section element
+  var backSection = document.querySelector('.landingpage');
+
+  // Add a click event listener to the About button
+  backButton.addEventListener('click', function() {
+    // Scroll to the target section smoothly
+    backSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
 // click to About
 document.addEventListener('DOMContentLoaded', function() {
   // Get the About button element
-  var aboutButton = document.querySelector('.about');
+  var aboutButton = document.querySelector('#about');
 
   // Get the target section element
   var aboutSection = document.querySelector('.section-about');
@@ -119,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // click to Research
 document.addEventListener('DOMContentLoaded', function() {
   // Get the Research button element
-  var researchButton = document.querySelector('.research');
+  var researchButton = document.querySelector('#research');
 
   // Get the target section element
   var researchSection = document.querySelector('.section-research');
@@ -134,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // click to Data skills
 document.addEventListener('DOMContentLoaded', function() {
   // Get the Data button element
-  var dataButton = document.querySelector('.data-skills');
+  var dataButton = document.querySelector('#data');
 
   // Get the target section element
   var dataSection = document.querySelector('.section-data');
@@ -149,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // click to Run section
 document.addEventListener('DOMContentLoaded', function() {
   // Get the Run button element
-  var runButton = document.querySelector('.run');
+  var runButton = document.querySelector('#run');
 
   // Get the target section element
   var runSection = document.querySelector('.section-run');
@@ -158,20 +144,5 @@ document.addEventListener('DOMContentLoaded', function() {
   runButton.addEventListener('click', function() {
     // Scroll to the target section smoothly
     runSection.scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
-//click to Back-to-top
-document.addEventListener('DOMContentLoaded', function() {
-  // Get the Back button element
-  var backButton = document.querySelector('.back');
-
-  // Get the target section element
-  var backSection = document.querySelector('.container-hero');
-
-  // Add a click event listener to the About button
-  backButton.addEventListener('click', function() {
-    // Scroll to the target section smoothly
-    backSection.scrollIntoView({ behavior: 'smooth' });
   });
 });
