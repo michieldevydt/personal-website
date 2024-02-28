@@ -15,6 +15,9 @@ body {
   font-weight: 300;
 }
 
+img {
+  border-radius: 15px;
+}
 .quote {
   font-style: italic;
 }
@@ -53,6 +56,7 @@ body {
   width: 30px;
   height: 30px;
   margin: 10px;
+  background-color: #f7f6f6;
 }
 
 .container-items {
@@ -67,6 +71,9 @@ body {
   grid-column-start: 2;
 }
 
+.item:hover {
+  color: rgba(27, 31, 37, 0.575);
+}
 .landingpage {
   height: 100vh;
 }
@@ -97,7 +104,7 @@ body {
   margin-top: 40px;
 }
 .field1-2 {
-  margin-left: 25px;
+  margin-left: 30px;
   text-align: justify;
   max-width: 850px;
 }
@@ -105,13 +112,13 @@ body {
   margin-top: 40px;
 }
 .field2-2 {
-  margin-left: 25px;
+  margin-left: 30px;
   text-align: justify;
   max-width: 650px;
 }
 .field3-1 {
   margin-left: 25px;
-  margin-right: 25px;
+  margin-right: 30px;
   text-align: justify;
   max-width: 650px;
 }
