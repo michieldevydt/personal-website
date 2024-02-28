@@ -140,3 +140,7 @@ body {
   margin: auto 0;
   color: grey;
 }
+
+li {
+  margin-left: 20px;
+}
