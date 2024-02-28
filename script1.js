@@ -1,32 +1,31 @@
-// random color hover effect
-document.addEventListener("DOMContentLoaded", function() {
-  const pixels = document.querySelectorAll('.pixel'); // Get all pixels
-  const items = document.querySelectorAll('.item'); // Get all items
+// // random color hover effect
+// document.addEventListener("DOMContentLoaded", function() {
+//   const pixels = document.querySelectorAll('.pixel'); // Get all pixels
+//   const items = document.querySelectorAll('.item'); // Get all items
 
-  // Function to generate a random color
-  function generateRandomColor() {
-    return '#' + Math.random().toString(16).substr(2, 6); // Generate a random hex color
-  }
+//   // Function to generate a random color
+//   function generateRandomColor() {
+//     return '#' + Math.random().toString(16).substr(2, 6); // Generate a random hex color
+//   }
 
-  // Set random colors for all pixels
-  pixels.forEach(pixel => {
-    pixel.style.backgroundColor = generateRandomColor();
-  });
+//   // Set random colors for all pixels
+//   pixels.forEach(pixel => {
+//     pixel.style.backgroundColor = generateRandomColor();
+//   });
 
-  // Event listeners for mouseover and mouseout events
-  items.forEach((item, index) => {
-    item.addEventListener('mouseover', function() {
-      this.style.color = pixels[index].style.backgroundColor; // Set text color to corresponding pixel color on mouseover
-    });
+//   // Event listeners for mouseover and mouseout events
+//   items.forEach((item, index) => {
+//     item.addEventListener('mouseover', function() {
+//       this.style.color = pixels[index].style.backgroundColor; // Set text color to corresponding pixel color on mouseover
+//     });
 
-    item.addEventListener('mouseout', function() {
-      this.style.color = ''; // Reset text color on mouseout
-    });
-  });
-});
+//     item.addEventListener('mouseout', function() {
+//       this.style.color = ''; // Reset text color on mouseout
+//     });
+//   });
+// });
 
 
-//here
 document.addEventListener('DOMContentLoaded', function(event) {
   // array with texts to type in typewriter
   var dataText = ["I am Michiel De Vydt", "I am a quantitative social scientist"];
@@ -146,3 +145,4 @@ document.addEventListener('DOMContentLoaded', function() {
     runSection.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
