@@ -198,17 +198,18 @@ button a {
 
 @media (max-width:1000px)
 {
-  .home
-  {
-    min-width: 390px;
-  }
-  .home h1 {
+  .home h1,
+  .research h1,
+  .data h1, 
+  .progress h1 {
     font-size: 1.65rem;
     font-weight: 700;
   }
-  .home p
-  {
-    font-size: 1rem;
+  .home p,
+  .research p,
+  .data p, 
+  .progress p {
+    font-size: 1.25rem;
     width: auto;
     font-weight: 300;
     margin: 0 auto 20px;
@@ -259,10 +260,27 @@ button a {
   }
   img {
     max-width: 350px;
-    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 10px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
   }
   .small-text {
     width: 450px;
     margin: 10px auto;
+  }
+  #home-text {
+    width: 100%;
+    text-align: justify;
+  }
+  #research-text {
+    width: 100%;
+    text-align: justify;
+  }
+  #progress-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
   }
 }
