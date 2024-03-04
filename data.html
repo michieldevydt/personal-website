@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Michiel De Vydt - Data skills</title>
+</head>
+<body><header>
+  <div class="logo">
+    Michiel De Vydt
+  </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">My research</a></li>
+      <li><a href="data.html">Data skills</a></li>
+      <li><a href="progress.html">Progress</a></li>
+    </ul>
+    <i class="fa-solid fa-bars" id="toggle"></i>
+  </nav>
+</header>
+
+<main class="data">
+  <div class="grid">
+    <div class="item" id="data-text">
+      <h1>Data skills</h1>
+      <p>I have gained substantial experience with dataset merging and (somewhat advanced) quantitative analysis (e.g. multilevel logistic regression). I consider myself an expert with Qualtrics and Stata, and an ongoing student of Python and R (for data visualisation). I currently assist academic professionals with various aspects of survey programming, dataset merging and preparation, as well as designing data visualizations.</p>
+      <p>I have <a href="https://www.uantwerpen.be/nl/personeel/michiel-de-vydt_17439/onderwijs/">co-taught</a> classes on multiple regression and scale construction to bachelor students. I take pride in having a solid understanding of the basics of statistics. Please, do ask me <em>to clearly explain</em> the central limit theorem, degrees of freedom, or what the p-value literally means.</p>
+      <p>Data handling and rigorous statistical analysis legitimately make me happy, and I am steadily improving my quantitative skillset.</p>
+      <div class="item" id="img-data">
+        <img src="DataAnalysis.png" width="1000px" class="image-border">
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+  const menu = document.querySelector('.menu');
+  const toggle = document.getElementById('toggle');
+  toggle.onclick = function(){
+    menu.classList.toggle('active');
+  }
+</script>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Michiel De Vydt - Research</title>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      Michiel De Vydt
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">My research</a></li>
+        <li><a href="data.html">Data skills</a></li>
+        <li><a href="progress.html">Progress</a></li>
+      </ul>
+      <i class="fa-solid fa-bars" id="toggle"></i>
+    </nav>
+  </header>
+
+  <main class="research">
+    <div class="grid">
+      <div class="item" id="img-research">
+        <img src="Feininger1911.png" width="450px">
+        <p class="small-text">Artwork 'Carnival in Arcueil' by Lynonel Feininger (1911)<br>© 2018 Artists Rights Society (ARS), New York / VG Bild-Kunst, Bonn</p>
+      </div>
+      <div class="item" id="research-text">
+        <h1>My research</h1>
+        <p>My doctoral research focuses on protest participation. More specifically, I examine the individual-level predictors and outcomes of interpersonal protest recruiting (IPR; a.k.a. "asking others" to protest).</p>
+        <p>Given that receiving a personal recruitment attempt (a.k.a. "being asked") is one of the strongest predictors of participation, it is relevant to examine the proceeding step. If we better understand the drivers and characteristics of IPR, we are better able to explain why some protests grow exponentially whereas other protest campaigns fail to attract attention-provoking crowds. Thematically, I have covered labor union demonstrations, solidarity movements, and the climate movement. I mainly use panel survey data to analyze my research questions.</p>
+        <p>If you are a journalist looking for research-based commentary on recent developments in climate activism (#FridaysForFuture, Exctinction Rebellion, Just Stop Oil), you are very welcome to contact me.</p>    
+        <button><a href="https://scholar.google.be/citations?user=SHKQDzYAAAAJ&hl" target="_blank">Publications</a></button>
+        <button><a href="https://www.researchgate.net/profile/Michiel-De-Vydt" target="_blank">ResearchGate</a></button>
+        <button><a href="https://orcid.org/0000-0002-6259-1411" target="_blank">ORCID</a></button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const menu = document.querySelector('.menu');
+    const toggle = document.getElementById('toggle');
+    toggle.onclick = function(){
+      menu.classList.toggle('active');
+    }
+  </script>
